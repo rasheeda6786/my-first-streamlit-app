@@ -1,10 +1,5 @@
 
 st.set_page_config(page_title="Calculator", page_icon="🧮")
-
-import streamlit as st
-
-st.title("Calculator App")
-st.write("My first Streamlit calculator 🚀")
 import streamlit as st
 
 st.title("Simple Calculator")
