@@ -4,8 +4,8 @@ st.set_page_config(page_title="Calculator", page_icon="🧮")
 
 st.title("Simple Calculator")
 
-a = st.number_input("Enter first number", value=0.0)
-b = st.number_input("Enter second number", value=0.0)
+a = st.number_input("Enter first number", value=0,step=1)
+b = st.number_input("Enter second number", value=0,step=1)
 
 operation = st.selectbox(
     "Choose operation",
