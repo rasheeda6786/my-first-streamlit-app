@@ -1,17 +1,6 @@
+import streamlit as st
 
 st.set_page_config(page_title="Calculator", page_icon="🧮")
-import streamlit as st
-
-st.title("Simple Calculator")
-
-a = st.number_input("Enter first number", value=0.0)
-b = st.number_input("Enter second number", value=0.0)
-
-operation = st.selectbox(
-    "Choose operation",
-    ["Add", "Subtract", "Multiply", "Divide"]
-)
-import streamlit as st
 
 st.title("Simple Calculator")
 
@@ -39,6 +28,6 @@ if st.button("Calculate"):
 
     if result is not None:
         st.success(f"Result: {result}")
-      st.markdown("---")
-st.caption("Made by Shadow using Streamlit")
 
+st.markdown("---")
+st.caption("Made by Shadow using Streamlit")
