@@ -1,0 +1,14 @@
+import streamlit as st
+
+st.title("🎓 College Placement Predictor")
+
+st.write("Enter student details to check placement possibility")
+
+iq = st.slider("IQ", 50, 200, 100)
+cgpa = st.slider("CGPA", 0.0, 10.0, 7.0)
+
+if st.button("Predict"):
+    if iq >= 100 and cgpa >= 7.0:
+        st.success("✅ High chance of getting PLACED")
+    else:
+        st.warning("⚠️ Low chance of getting PLACED")
